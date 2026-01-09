@@ -1,0 +1,35 @@
+<!-- registro.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Crear Usuario</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-box">
+        <h2>Crear Usuario</h2>
+
+        <form action="crear_usuario.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="text" name="usuario" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+
+            <select name="rol" required>
+                <option value="">Seleccione rol</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Vendedor">Vendedor</option>
+                <option value="Almacen">Almacén</option>
+            </select>
+
+            <button>Registrar</button>
+        </form>
+
+        <a href="login.html" class="link">Volver al login</a>
+    </div>
+</div>
+
+</body>
+</html>
